@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="card-header"><%= @gossip.title %></div> <!-- Son titre ! -->
+  <div class="card-body">Contenu : <%= @gossip.content %> </br></br> Date de création : <%= @gossip.created_at %></div> <!-- Son Auteur et sa date de création ! -->
+  <div class="card-footer">Author : <%= link_to "#{@gossip.user.first_name} #{@gossip.user.last_name}", show_authors_path(@gossip.user.id) %></div><!-- Lien vers la page de l'auteur -->
+</div>
+
+
